@@ -18,7 +18,8 @@
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=d83bac43fe93"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -43,6 +44,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0",
     "jest-vue-preprocessor": "^1.7.1",
+    "storybook-source-code-addon": "^1.2.0",
     "typescript": "~3.9.3",
     "vue-jest": "^5.0.0-0",
     "vue-loader": "^16.2.0"

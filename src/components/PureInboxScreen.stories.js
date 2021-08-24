@@ -23,7 +23,7 @@ app.use(store);
 
 export default {
   component: PureInboxScreen,
-  title: 'PureInboxScreen',
+  title: 'PureInboxScreen'
 };
 
 const Template = args => ({

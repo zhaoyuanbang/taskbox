@@ -17,7 +17,7 @@ const Template = args => ({
   setup() {
     return { args, ...TaskStories.actionsData };
   },
-  template: '<PureTaskList v-bind="args" />',
+  template: '<PureTaskList v-bind="args" />'
 });
 
 export const Default = Template.bind({});

@@ -1,7 +1,7 @@
 <template>
   <div :class="classes">
     <label class="checkbox">
-      <input type="checkbox" :checked="isChecked" disabled name="checked" />
+      <input type="checkbox" :checked="isChecked" name="checked" />
       <span class="checkbox-custom" @click="archiveTask" />
     </label>
     <div class="title">
@@ -38,19 +38,10 @@
           'list-item TASK_PINNED': props.task.state === 'TASK_PINNED',
           'list-item TASK_ARCHIVED': props.task.state === 'TASK_ARCHIVED',
         })),
-        /**
-         * Computed property for checking the state of the task
-         */
         isChecked: computed(() => props.task.state === 'TASK_ARCHIVED'),
-        /**
-         * Event handler for archiving tasks
-         */
         archiveTask() {
           emit('archive-task', props.task.id);
         },
-        /**
-         * Event handler for pinning tasks
-         */
         pinTask() {
           emit('pin-task', props.task.id);
         },
